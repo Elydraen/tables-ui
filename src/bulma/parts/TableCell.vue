@@ -68,7 +68,9 @@ export default {
 		meta() {
 			return this.column.meta;
 		},
-		methods: {
+
+	},
+	methods: {
 			sanitizeVariableName(str) {
 				return str
 					.normalize("NFD")
@@ -77,7 +79,6 @@ export default {
 					.toLowerCase()
 			}
 		},
-	},
 };
 </script>
 
