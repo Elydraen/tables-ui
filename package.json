@@ -2,7 +2,7 @@
   "name": "@enso-ui/tables",
   "version": "3.4.5",
   "description": "Tables",
-  "main": "index.js",
+  "main": "bulma/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
