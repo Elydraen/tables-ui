@@ -52,9 +52,9 @@ export default {
 
     computed: {
         cssClass() {
-            return [this.boolean, this.clickable, this.icon]
-                .filter(v => v).join(' ');
-        },
+			return [this.boolean, this.clickable, this.icon]
+				.filter(v => v).join(' ') + ' ' +this.sanitizeVariableName(this.modelValue);
+		},
         boolean() {
             return this.meta.boolean && !this.meta.slot
                 ? ['tag is-table-tag icon', this.modelValue ? 'is-success' : 'is-danger']
